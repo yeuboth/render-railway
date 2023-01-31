@@ -683,6 +683,17 @@ if len(UPSTREAM_BRANCH) == 0:
 UPDATE_PACKAGES = environ.get('UPDATE_PACKAGES', '')
 if len(UPDATE_PACKAGES) == 0:
     UPDATE_PACKAGES = 'False'
+FSMAIL = environ.get('FSMAIL', '')
+FSPASS = environ.get('FSPASS', '')
+if len(FSMAIL) == 0 or len(FSPASS) == 0:
+    FSMAIL = None
+    FSPASS = None   
+TOKENBONSHARE = environ.get('TOKENBONSHARE', '')
+if len(TOKENBONSHARE) == 0:
+    TOKENBONSHARE = None      
+FSLIMIT = environ.get('FSLIMIT', '')
+if len(FSLIMIT) == 0:
+    FSLIMIT = 20      
 
 
 config_dict = {'ANILIST_ENABLED': ANILIST_ENABLED,
@@ -814,6 +825,9 @@ config_dict = {'ANILIST_ENABLED': ANILIST_ENABLED,
                'WEB_PINCODE': WEB_PINCODE,
                'YTDLP_LIMIT': YTDLP_LIMIT,
                'MAX_PLAYLIST': MAX_PLAYLIST,
+               'FSMAIL': FSMAIL,
+               'FSPASS': FSPASS,
+               'FSLIMIT': FSLIMIT,               
                'YT_DLP_QUALITY': YT_DLP_QUALITY}
 
 if GDRIVE_ID:
