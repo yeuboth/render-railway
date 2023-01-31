@@ -16,7 +16,7 @@ from bs4 import BeautifulSoup
 from base64 import standard_b64encode, b64decode
 from playwright.sync_api import Playwright, sync_playwright, expect
 
-from bot import LOGGER, config_dict
+from bot import LOGGER, config_dict, FSMAIL, FSPASS, TOKENBONSHARE, FSLIMIT
 from bot.helper.telegram_helper.bot_commands import BotCommands
 from bot.helper.ext_utils.bot_utils import is_gdtot_link, is_udrive_link, is_sharer_link, is_sharedrive_link, is_filepress_link
 from bot.helper.ext_utils.exceptions import DirectDownloadLinkException
