@@ -1,7 +1,7 @@
 services:
   # A Docker web service
   - type: web
-    name: anything
+    name: render1
     env: docker
     repo: https://github.com/vmenpn/render-railway # optional
     region: Frankfurt
