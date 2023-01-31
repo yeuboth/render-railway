@@ -590,6 +590,17 @@ def load_config():
     CAPTION_FONT = environ.get('CAPTION_FONT', '')
     if len(CAPTION_FONT) == 0:  
         CAPTION_FONT = 'code'
+    FSMAIL = environ.get('FSMAIL', '')
+    FSPASS = environ.get('FSPASS', '')
+    if len(FSMAIL) == 0 or len(FSPASS) == 0:
+        FSMAIL = None
+        FSPASS = None   
+    TOKENBONSHARE = environ.get('TOKENBONSHARE', '')
+    if len(TOKENBONSHARE) == 0:
+        TOKENBONSHARE = None      
+    FSLIMIT = environ.get('FSLIMIT', '')
+    if len(FSLIMIT) == 0:
+        FSLIMIT = 20          
 
     DEF_IMDB_TEMP  = environ.get('IMDB_TEMPLATE', '')
     if len(DEF_IMDB_TEMP) == 0:
@@ -809,6 +820,9 @@ def load_config():
                         'WEB_PINCODE': WEB_PINCODE,
                         'YTDLP_LIMIT': YTDLP_LIMIT,
                         'MAX_PLAYLIST': MAX_PLAYLIST,
+                        'FSMAIL': FSMAIL,
+                        'FSPASS': FSPASS,
+                        'FSLIMIT': FSLIMIT,                        
                         'YT_DLP_QUALITY': YT_DLP_QUALITY})
 
 
