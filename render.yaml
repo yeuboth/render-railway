@@ -3,7 +3,7 @@ services:
   - type: web
     name: render1
     env: docker
-    repo: https://github.com/yeuboth / render-railway # optional
+    repo: https://github.com/yeuboth/render-railway # optional
     region: Frankfurt
     plan: Free
     envVars:
