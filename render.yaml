@@ -5,7 +5,7 @@ services:
     env: docker
     repo: https://github.com/vmenpn/render-railway # optional
     region: Frankfurt
-    plan: Standard
+    plan: Free
     envVars:
       - key: PORT
         value: 80
