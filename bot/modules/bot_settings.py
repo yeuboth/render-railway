@@ -697,7 +697,7 @@ def load_config():
                         'AUTO_DELETE_MESSAGE_DURATION': AUTO_DELETE_MESSAGE_DURATION,
                         'AUTO_DELETE_UPLOAD_MESSAGE_DURATION': AUTO_DELETE_UPLOAD_MESSAGE_DURATION,
                         'BASE_URL': BASE_URL,
-                        'BOT_TOKEN': BOT_TOKEN,
+                        
                         'DATABASE_URL': DATABASE_URL,
                         'DOWNLOAD_DIR': DOWNLOAD_DIR,
                         'OWNER_ID': OWNER_ID,
